@@ -1,0 +1,378 @@
+:root {
+    --text-color: #1a1c20;
+    --link-color: #4a76ee;
+    --background-color: #eeeff1;
+    --border-color: #36454F;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:'Poppins', sans-serif;
+    background-image: url(BG_PIC3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size:cover;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+ /* NAVBAR*/
+ nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+ }
+
+ nav .left a{
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: bold;
+ }
+
+ nav .right a{
+    color: var(--text-color);
+    margin: 0 10px;
+ }
+
+ nav .right a:last-child{
+    color: var(--background-color);
+    background-color: var(--text-color);
+    padding:5px 15px;
+    border-radius: 5px;
+ }
+ 
+ /*Section 1: Hero*/
+ .hero-section {
+    display:flex ;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin: 50px 0;
+    margin-bottom: 100px;
+    gap: 40px;
+ }
+
+ .hero-section .text {
+    flex: 5;
+ }
+
+ .hero-section .text .links{
+    margin-top: 25px;
+ }
+ .hero-section .text .links a {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: .1s;
+ }
+ .hero-section .text .links a:hover {
+    color: var(--text-color);
+    border:none;
+ }
+
+ .hero-section .headshot {
+    flex: 2;
+    display:flex;
+    justify-content: right;
+ }
+
+ .hero-section .headshot img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column-reverse;
+    border: 3.5px solid var(--border-color)
+ }
+
+ /*SECTION 2: Skills*/
+.skills-section {
+    padding: 0 50px;
+    margin-bottom: 50px;
+}
+
+.skills-section h2 {
+    text-align:center ;
+    font-size: 35px;
+}
+
+.skills-section .text {
+    text-align:center ;
+    margin-bottom: 20px;
+}
+
+.skills-section .cells .cell {
+   display: flex; 
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+
+   width: 120px;
+   padding: 15px;
+   margin: 10px;
+   border: 1.5px solid var(--text-color);
+   border-radius: 8px;
+   background-color: transparent;
+}
+
+.skills-section .cells .cell span {
+    font-weight: bold;
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+.skills-section .cells .cell img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-bottom: 2px;
+    border-radius: 2px;
+}
+
+.skills-section .cells {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills-section .soft h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+/* Soft Skills */
+.soft-skills {
+    padding: 50px;
+    margin-bottom: 50px;
+}
+.soft-skills h2{
+    text-align: center;
+    font-size: 35px;
+}
+
+.soft-skills .text {
+    text-align: center;
+    margin-bottom: 20px;
+}.soft-skills .pics {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.soft-skills .pics .pic{
+   display: flex; 
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+
+   width: fit-content;
+   padding: 15px;
+   margin: 10px;
+   border: 1.5px solid var(--text-color);
+   border-radius: 8px;
+   background-color: transparent;
+}
+
+/*Section 3: Achievements*/
+.about-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.about-section h2 {
+    font-size: 35px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.about-section .group{
+    display: flex;
+    align-items: center;
+    gap:50px;
+}
+
+.about-section .group .person-details {
+    text-align: center;
+}
+
+.about-section .group .person-details img{
+    aspect-ratio: 1/1;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3.5px solid var(--border-color)
+}
+
+.about-section .group .person-details p {
+    font-weight: bold;
+
+}
+
+.about-section .group .person-details p:last-child{
+    font-weight: normal;
+}
+
+.about-section .group .text {
+  display: flex;
+  padding: 15px;
+  border: 2px solid var(--text-color);
+  border-radius: 8px;
+  justify-content: center;
+  width: 100%;
+  font-size: 18px;
+  padding-right:10%;
+  list-style-position: inside;
+}
+
+/*SECTION 4: Contact*/
+.contact-sec {
+    padding: 0 50px;
+    margin-bottom: 50px;
+}
+
+.contact-sec .group .text {
+    font-size: 20px;
+    margin: 10px;
+    text-align: center;
+}
+.contact-sec .group .text ul{
+    align-items: center;
+    list-style-position: inside;
+    font-size: 20px;
+    gap: 5px;
+}
+
+.contact-sec h2{
+    text-align: center;
+}
+
+
+/* Copyright */
+.cr{
+    text-align: left;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 0 50px;
+    margin-bottom: 40px;
+}
+
+ @media (max-width: 850px) {
+    /*SECTION 1: Hero*/
+    .hero-section .text h2 {
+        font: size 35px;
+    }
+ }
+
+ @media (max-width: 740px) {
+     /*NAVRBAR*/
+    nav {
+        padding: 0 20px;
+    }
+
+    nav .right a {
+        font-size: 22px;
+    }
+   
+    nav .right a:last-child {
+        color: var(--text-color);
+        background-color: transparent;
+        padding: 0;
+    }
+
+    nav .right a span {
+        display: none;
+    }
+    /*SECTION 1: Hero*/
+    .hero-section {
+        flex-direction: column-reverse;
+    }
+
+    .hero-section .headshot img {
+        width: 300px;
+
+    }
+
+    .hero-section .headshot img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column-reverse;
+    border: 3.5px solid var(--border-color)
+    }
+
+    /*SECTION 3: About*/
+    .about-section h2 {
+        text-align: center;
+    }
+    .about-section .group {
+        flex-direction: column;
+    }
+ }
+
+
+ @media (max-width: 600px) {
+    /*NAVRBAR*/
+    nav {
+        padding: 0 20px;
+    }
+
+    nav .right a {
+        font-size: 22px;
+    }
+   
+    nav .right a:last-child {
+        color: var(--text-color);
+        background-color: transparent;
+        padding: 0;
+    }
+
+    nav .right a span {
+        display: none;
+    }
+
+    /*Section 1: hero*/
+    .hero-section {
+        padding: 0 20px;
+
+    }
+
+    .hero-section .text h2 {
+        font-size: 30px;
+    }
+    
+     /*SECTION 2: Skills*/
+     .skills-section {
+        padding: 0;
+     }
+
+     .skills-section .cells .cell {
+        font-size: 16px;
+     }
+
+    .contact-sec .group .text{
+        font-size: 15px;
+    }
+
+ }
