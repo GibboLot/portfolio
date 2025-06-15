@@ -90,7 +90,7 @@ a {
  .hero-section .headshot {
     flex: 2;
     display:flex;
-    justify-content: right;
+    justify-content: center;
  }
 
  .hero-section .headshot img {
