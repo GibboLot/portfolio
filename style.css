@@ -410,11 +410,4 @@ a {
     .contact-sec .group .text{
         font-size: 15px;
     }
-
-     .contact-sec .email {
-        word-break: break-word;
-        overflow-wrap: break-word;
-        max-width: 100%;
-    }
-
  }
